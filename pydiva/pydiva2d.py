@@ -11,7 +11,7 @@ import geojson
 import matplotlib.pyplot as plt
 from matplotlib import path
 from matplotlib import patches
-import matplotlib._cntr as cntr
+import matplotlib._contour as cntr
 
 __author__ = 'ctroupin (GHER, ULg)'
 """Module for running Diva2D, including:
