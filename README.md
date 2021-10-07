@@ -12,19 +12,25 @@ A set of python modules to help users with
 
 ### Prerequisites
 
-The [Diva](https://github.com/gher-ulg/diva) interpolation tool has to be installed and compiled on your machine. See the related [documentation](https://github.com/gher-ulg/DIVA/blob/master/README.md#installing) for the installation.
+The [Diva](https://github.com/gher-ulg/diva) interpolation tool has to be installed and compiled on your machine. See the related [documentation](https://github.com/gher-ulg/DIVA/blob/master/README.md#installing) for the installation. Note that installation may be more difficult using a Windows OS.
 
 ### Installing
 
+Create a conda environment with Python 3.7 (only 2.7, 3.5, 3.6 and 3.7 compatible with the `geojson` Python package, which is a required package).
+```bash
+conda create --name py37 python=3.7
+conda activate py37
+conda install matplotlib numpy pandas netCDF4
+pip install geojson
+```
+
 Clone the package:
 ```bash
-git clone git@github.com:gher-ulg/DivaPythonTools.git
+git clone git@github.com:hhourston/DivaPythonTools.git
 ```
-or download the latest stable [release](https://github.com/gher-ulg/DivaPythonTools/releases).
 
 Inside DivaPythonTools directory execute:
 ```python
-pip install -r requirements.txt
 python setup.py install
 ```
 
