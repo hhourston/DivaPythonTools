@@ -20,7 +20,7 @@ Create a conda environment with Python 3.7 (only 2.7, 3.5, 3.6 and 3.7 compatibl
 ```bash
 conda create --name py37 python=3.7
 conda activate py37
-conda install matplotlib numpy pandas netCDF4
+conda install matplotlib numpy pandas netCDF4 basemap
 pip install geojson
 ```
 
@@ -31,8 +31,10 @@ git clone git@github.com:hhourston/DivaPythonTools.git
 
 Inside DivaPythonTools directory execute:
 ```python
-python setup.py install
+python3 setup.py install
 ```
+
+Using python instead of python3 may work instead.
 
 After this you should use it as:
 ```python
