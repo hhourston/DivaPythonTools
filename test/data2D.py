@@ -1,4 +1,4 @@
-import pydiva2d
+from pydiva import pydiva2d
 import numpy as np
 
 x = np.array((0., 1., 2.))
