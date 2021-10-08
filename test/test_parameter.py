@@ -1,4 +1,4 @@
-import pydiva2d
+from pydiva import pydiva2d
 import unittest
 import os
 
